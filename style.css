@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(248, 236, 253);
+    background-color: #e6eaf8;
 }
 
 .body-flex {
@@ -14,7 +14,7 @@ body {
 
 .main-container {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 40px;
     width: 1000px;
     max-width: 80vw;
@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
 
 .search-bar {
@@ -42,6 +42,7 @@ body {
 }
 
 .search-input {
+    font-family: 'Roboto', sans-serif;
     width: 180px;
     border: none;
     border-radius: 5px;
@@ -69,6 +70,7 @@ body {
 }
 
 .menu-item {
+    font-family: 'Roboto', sans-serif;
     padding: 13px 20px;
     border-radius: 5px;
     margin-right: 5px;
@@ -84,10 +86,82 @@ body {
 .menu-item-hover {
     transition: background-color 0.2s ease-in-out;
     color: white;
-    background-color: rgb(126, 146, 238);
+    background-color: #849fff;
 }
 
 .menu-item-hover:hover {
     color: white;
     background-color: rgb(160, 178, 255);
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.user-item {
+    display: flex;
+    padding: 20px 0px 50px 20px;
+    border-radius: 15px;
+    justify-items: center;
+    border: 1px solid white;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+}
+
+.user-item:hover {
+    border: 1px solid #849fff;
+    box-shadow: 4px 6px 10px 0 rgba(164, 213, 255, 0.438);
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.user-name:hover {
+    text-decoration: underline;
+}
+
+.user-location {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.user-badges {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+.user-badge {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 2px 10px;
+    color: #849fff;
+    margin-right: 5px;
+    margin-top: 5px;
+    border: 1px solid #849fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.user-badge:hover {
+    color: #a8bafa;
+    border: 1px solid #a8bafa;
 }
